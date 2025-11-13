@@ -3,21 +3,13 @@
 
 int main(int argc, char *argv[])
 {
- 		int i = 10;
- 		char c = 'a';
+ 		int i = 300;
  		
- 		int *iptr;
- 		iptr = &i;
- 		char *cptr;
- 		cptr = &c;
- 		int *iptr2;
- 		iptr2 = iptr;
+ 		int *pi = &i;
+ 		char *pc = &i;
  		
+ 		printf("%i, %i, %i\n", i, *pi, *pc);
  		
- 		printf("i: %p\n%p (size:%i)\n", iptr, &i, sizeof(iptr));
- 		printf("c: %p\n%p (size:%i)\n", cptr, &c, sizeof(cptr));
- 		printf("iptr2: %p, %i\n", iptr2, *iptr2); 
-  
   system("PAUSE");	
   return 0;
 }
